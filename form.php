@@ -20,7 +20,7 @@ private $gender = "";
 private $website = "";
 
 
-
+//Metodo para escribir formulario
 public function escribirFormulario(){
 ?>
 
@@ -49,6 +49,7 @@ public function escribirFormulario(){
 <?php
 }
 
+//Metodo para validar formulario
 public function validarFormulario(){
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($_POST["name"])) {
@@ -97,7 +98,7 @@ private function test_input($data) {
     return $data;
 }
 
-
+//Metodo para escribir resultado.
 public function escribirResultados(){
 
 echo "<h2>Your Input:</h2>";
@@ -116,7 +117,7 @@ echo $this->gender;
 
 
 
-
+//Oobjetos
 $formulario1 = new Formulario();
 $formulario1->validarFormulario();
 $formulario1->escribirFormulario();
