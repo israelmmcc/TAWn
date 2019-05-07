@@ -22,6 +22,12 @@ $a -> marca = "Chevrolet";
 $a -> modelo = "Chevy";
 $a -> mostrar();
 
+
+$a = new Automovil();
+$a -> marca = "Nissan";
+$a -> modelo = "Tsuru";
+$a -> mostrar();
+
 //Principios de la poo que se cumplen en este ejemplo:
 
 //1. Abstracción: Nuevos tipos de datos (el que quieras lo creas).
